@@ -1,0 +1,9 @@
+<div class="left">
+    <img src="{{listingItemCtrl.listing.picture_url}}" />
+</div>
+
+<div class="right">
+    <h1 ng-bind="listingItemCtrl.listing.name"></h1>
+    <h2 ng-bind="listingItemCtrl.listing.public_address"></h2>
+    <a ng-show="listingItemCtrl.showMoreInfo" class="more-details-button" ui-sref="details({ id: listingItemCtrl.listing.id, listing: listingItemCtrl.data})">More Details</a>
+</div>

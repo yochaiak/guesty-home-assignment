@@ -1,0 +1,10 @@
+<listing-item listing="listingDetailsCtrl.listing" show-more-info="false"></listing-item>
+<div class="reviews">
+    <h2>Reviews</h2>
+    <div class="review" ng-repeat="review in listingDetailsCtrl.reviews">
+        <div class="author">
+            <span>Author: {{review.author.first_name}}</span>
+        </div>
+        <p ng-bind="review.comments"></p>
+    </div>
+</div>

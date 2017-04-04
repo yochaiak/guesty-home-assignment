@@ -1,0 +1,12 @@
+<div class="filter-section">
+    <select ng-model="mainCtrl.location" ng-change="mainCtrl.onLocationChanged()">
+        <option>London</option>
+        <option>Paris</option>
+        <option>Tel Aviv</option>
+        <option>NYC</option>
+    </select>
+</div>
+
+<div class="listing-section">
+    <listing-item ng-repeat="item in mainCtrl.list" listing="item.listing" show-more-info="true"></listing-item>
+</div>
